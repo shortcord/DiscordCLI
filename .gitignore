@@ -1,5 +1,7 @@
 
-# Created by https://www.gitignore.io/api/csharp,visualstudio,visualstudiocode
+# Created by https://www.gitignore.io/api/csharp,visualstudio,visualstudiocode,cpp
+
+#!! ERROR: cpp is undefined. Use list command to see defined gitignore types !!#
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -439,4 +441,4 @@ __pycache__/
 # By default, sensitive information, such as encrypted password
 # should be stored in the .pubxml.user file.
 
-# End of https://www.gitignore.io/api/csharp,visualstudio,visualstudiocode
+# End of https://www.gitignore.io/api/csharp,visualstudio,visualstudiocode,cpp

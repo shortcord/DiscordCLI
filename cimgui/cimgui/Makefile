@@ -54,4 +54,4 @@ imgui_example:$(OBJS)
 	$(CXX) -o $(OUTPUTNAME) $(OBJS) $(CXXFLAGS) $(LINKFLAGS)
 
 clean:
-	rm $(OBJS)
+	rm -f $(OBJS)

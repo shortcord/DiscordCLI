@@ -1,15 +1,36 @@
 {
-    "version": "2.0.0",
+    "version": "0.1.0",
+    "command": "bash",
+    "args" :[
+        "-c"
+    ],
+    "suppressTaskName" : true,
     "tasks": [
         {
-            "taskName": "build",
-            "command": "dotnet",
-            "type": "process",
+            "taskName": "build cli",
+            "isBuildCommand": true,
             "args": [
-                "build",
-                "${workspaceFolder}/ImGui.NET.SampleProgram/ImGui.NET.SampleProgram.csproj"
+                "dotnet build ${workspaceFolder}/Discord/Discord.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "run cli",
+            "args": [
+                "dotnet run -p ${workspaceFolder}/Discord/Discord.csproj"
+            ]
+        },
+        {
+            "taskName": "run sample",
+            "args": [
+                "dotnet run -p ${workspaceFolder}/ImGui.NET.SampleProgram/ImGui.NET.SampleProgram.csproj"
+            ]
+        },
+        {
+            "taskName": "build cimgui (linux)",
+            "args": [
+                "cd && make -C ${workspaceFolder}/cimgui/cimgui clean && make -C ${workspaceFolder}/cimgui/cimgui all"
+            ]
         }
     ]
 }
