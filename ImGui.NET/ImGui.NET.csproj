@@ -26,5 +26,9 @@
       <PackagePath>runtimes/osx.10.10-x64/native</PackagePath>
       <Pack>true</Pack>
     </Content>
+    <Content>
+      <PackagePath>runtimes/fedora.26-x64/native</PackagePath>
+      <Pack>true</Pack>
+    </Content>
   </ItemGroup>
 </Project>
