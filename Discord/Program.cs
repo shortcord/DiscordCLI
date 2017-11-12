@@ -1,4 +1,5 @@
 ﻿using System;
+using ImGuiNET;
 
 namespace Discord
 {
@@ -6,7 +7,8 @@ namespace Discord
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Window w = new Window(new WindowSettings());
+            w.Run();
         }
     }
 }

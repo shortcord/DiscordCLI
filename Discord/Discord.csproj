@@ -9,4 +9,8 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(SolutionDir)lib\cimgui\win-x64\*&quot; &quot;$(TargetDir)&quot; /-Y /Y" />
+  </Target>
+
 </Project>

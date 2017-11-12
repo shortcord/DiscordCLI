@@ -12,5 +12,8 @@
   <ItemGroup>
     <PackageReference Include="OpenTK.NETCore" Version="1.1.2749.6433" />
   </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(SolutionDir)lib\cimgui\win-x64\*&quot; &quot;$(TargetDir)&quot; /-Y /Y" />
+  </Target>
 
 </Project>
